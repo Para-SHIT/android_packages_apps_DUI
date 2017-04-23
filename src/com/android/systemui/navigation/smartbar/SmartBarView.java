@@ -95,7 +95,6 @@ public class SmartBarView extends BaseNavigationBar {
         sUris.add(Settings.Secure.getUriFor("smartbar_ime_hint_mode"));
         sUris.add(Settings.Secure.getUriFor("smartbar_button_animation_style"));
         sUris.add(Settings.Secure.getUriFor(Settings.Secure.NAVBAR_BUTTONS_ALPHA));
-        sUris.add(Settings.Secure.getUriFor(Settings.Secure.ONE_HANDED_MODE_UI));
         sUris.add(Settings.Secure.getUriFor(Settings.Secure.PULSE_CUSTOM_BUTTONS_OPACITY));
         sUris.add(Settings.Secure.getUriFor(Settings.Secure.SMARTBAR_LONGPRESS_DELAY));
         sUris.add(Settings.Secure.getUriFor(Settings.Secure.SMARTBAR_CUSTOM_ICON_SIZE));
@@ -118,8 +117,6 @@ public class SmartBarView extends BaseNavigationBar {
                 updateAnimationStyle();
             } else if (uri.equals(Settings.Secure.getUriFor(Settings.Secure.NAVBAR_BUTTONS_ALPHA))) {
                 updateButtonAlpha();
-            } else if (uri.equals(Settings.Secure.getUriFor(Settings.Secure.ONE_HANDED_MODE_UI))) {
-                updateOneHandedModeSetting();
             } else if (uri.equals(Settings.Secure.getUriFor(Settings.Secure.PULSE_CUSTOM_BUTTONS_OPACITY))) {
                 updatePulseNavButtonsOpacity();
             } else if (uri.equals(Settings.Secure.getUriFor(Settings.Secure.SMARTBAR_LONGPRESS_DELAY))) {
@@ -142,7 +139,6 @@ public class SmartBarView extends BaseNavigationBar {
     private View mContextRight, mContextLeft, mCurrentContext;
     private boolean mHasLeftContext;
     private boolean mMusicStreamMuted;
-    private boolean isOneHandedModeEnabled;
     private int mImeHintMode;
     private int mButtonAnimationStyle;
     private float mCustomAlpha;
@@ -218,9 +214,7 @@ public class SmartBarView extends BaseNavigationBar {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        if (isOneHandedModeEnabled) {
-            mSlideTouchEvent.handleTouchEvent(event);
-        }
+        mSlideTouchEvent.handleTouchEvent(event);
         return super.onTouchEvent(event);
     }
 
@@ -239,7 +233,6 @@ public class SmartBarView extends BaseNavigationBar {
         recreateLayouts();
         updateImeHintModeSettings();
         updateContextLayoutSettings();
-        updateOneHandedModeSetting();
         updateButtonLongpressDelay();
     }
 
@@ -646,11 +639,6 @@ public class SmartBarView extends BaseNavigationBar {
         getHiddenContext().findViewWithTag(Res.Softkey.MENU_BUTTON).setVisibility(INVISIBLE);
         getHiddenContext().findViewWithTag(Res.Softkey.IME_SWITCHER).setVisibility(INVISIBLE);
         setNavigationIconHints(mNavigationIconHints, true);
-    }
-
-    private void updateOneHandedModeSetting() {
-        isOneHandedModeEnabled = Settings.Secure.getIntForUser(getContext().getContentResolver(),
-                Settings.Secure.ONE_HANDED_MODE_UI, 0, UserHandle.USER_CURRENT) == 1;
     }
 
     void recreateButtonLayout(ArrayList<ButtonConfig> buttonConfigs, boolean landscape,
