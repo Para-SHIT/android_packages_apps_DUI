@@ -21,7 +21,6 @@
   <string name="label_action_settings_panel">QS Panel</string>
   <string name="label_action_notification_panel">Notifieringspanel</string>
   <string name="label_action_screenshot">Skärmbild</string>
-  <string name="label_action_screenrecord">Skärminspelning</string>
   <string name="label_action_expanded_desktop">Utökat skrivbord</string>
   <string name="label_action_screen_off">Stänga av skärmen</string>
   <string name="label_action_force_close_app">Tvinga stängning av app</string>

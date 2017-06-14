@@ -21,7 +21,6 @@
   <string name="label_action_settings_panel">Schnelleinstellungen</string>
   <string name="label_action_notification_panel">Benachrichtigungsfeld</string>
   <string name="label_action_screenshot">Bildschirmfoto</string>
-  <string name="label_action_screenrecord">Bildschirmaufnahme</string>
   <string name="label_action_expanded_desktop">Erweiterter Desktop</string>
   <string name="label_action_screen_off">Bildschirm ausschalten</string>
   <string name="label_action_force_close_app">App beenden</string>

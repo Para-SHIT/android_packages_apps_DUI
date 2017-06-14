@@ -22,7 +22,6 @@
   <string name="label_action_notification_panel">Панель уведомлений</string>
   <string name="label_action_screenshot">Скриншот</string>
   <string name="label_action_region_screenshot">Скриншот выбранной области экрана</string>
-  <string name="label_action_screenrecord">Запись экрана</string>
   <string name="label_action_expanded_desktop">Расширенный экран</string>
   <string name="label_action_screen_off">Выключить экран</string>
   <string name="label_action_force_close_app">Принудительно закрыть приложение</string>

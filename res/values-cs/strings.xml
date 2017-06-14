@@ -21,7 +21,6 @@
   <string name="label_action_settings_panel">Panel QS</string>
   <string name="label_action_notification_panel">Notifikační panel</string>
   <string name="label_action_screenshot">Snímek obrazovky</string>
-  <string name="label_action_screenrecord">Záznam obrazovky</string>
   <string name="label_action_expanded_desktop">Rozšířená plocha</string>
   <string name="label_action_screen_off">Vypnout obrazovku</string>
   <string name="label_action_force_close_app">Vynutit ukončení aplikace</string>

@@ -21,7 +21,6 @@
   <string name="label_action_settings_panel">Panel QS</string>
   <string name="label_action_notification_panel">Panel de notificaciones</string>
   <string name="label_action_screenshot">Captura de pantalla</string>
-  <string name="label_action_screenrecord">Grabar Pantalla</string>
   <string name="label_action_expanded_desktop">Escritorio extendido</string>
   <string name="label_action_screen_off">Apagar pantalla</string>
   <string name="label_action_force_close_app">Forzar cierre de app</string>

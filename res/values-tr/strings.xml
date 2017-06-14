@@ -21,7 +21,6 @@
   <string name="label_action_settings_panel">QS paneli</string>
   <string name="label_action_notification_panel">Bildirim paneli</string>
   <string name="label_action_screenshot">Ekran görüntüsü</string>
-  <string name="label_action_screenrecord">Kayıt ekranı</string>
   <string name="label_action_expanded_desktop">Genişletilmiş masaüstü</string>
   <string name="label_action_screen_off">Ekranı kapat</string>
   <string name="label_action_force_close_app">Kapatmaya zorla</string>

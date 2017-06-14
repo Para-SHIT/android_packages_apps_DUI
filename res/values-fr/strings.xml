@@ -23,7 +23,6 @@
     <string name="label_action_notification_panel">Volet de notification</string>
     <string name="label_action_screenshot">Capture d\'écran</string>
     <string name="label_action_region_screenshot">Capture d\'écran partielle</string>
-    <string name="label_action_screenrecord">Capture vidéo</string>
     <string name="label_action_expanded_desktop">Bureau étendu</string>
     <string name="label_action_screen_off">Mise en veille</string>
     <string name="label_action_force_close_app">Forcer l\'arrêt de l\'application</string>

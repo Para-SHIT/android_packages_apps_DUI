@@ -21,7 +21,6 @@
   <string name="label_action_settings_panel">Instellingen QS</string>
   <string name="label_action_notification_panel">Notificatie paneel</string>
   <string name="label_action_screenshot">Schermafbeelding</string>
-  <string name="label_action_screenrecord">Scherm opnemen</string>
   <string name="label_action_expanded_desktop">Uitgebreid bureaublad</string>
   <string name="label_action_screen_off">Scherm uitschakelen</string>
   <string name="label_action_force_close_app">App geforceerd afsluiten</string>

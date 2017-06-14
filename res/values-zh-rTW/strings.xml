@@ -21,7 +21,6 @@
   <string name="label_action_settings_panel">QS面板</string>
   <string name="label_action_notification_panel">通知面板</string>
   <string name="label_action_screenshot">擷取螢幕畫面</string>
-  <string name="label_action_screenrecord">錄製螢幕</string>
   <string name="label_action_expanded_desktop">擴展桌面</string>
   <string name="label_action_screen_off">關閉螢幕</string>
   <string name="label_action_force_close_app">強制關閉應用程式</string>
