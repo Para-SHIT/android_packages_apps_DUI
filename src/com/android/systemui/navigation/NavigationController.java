@@ -342,8 +342,8 @@ public class NavigationController implements PackageChangedListener {
             // key disabler has already been invoked
             // Send a broadcast to Settings to update Key disabling when user changes
             if (!DUActionUtils.hasNavbarByDefault(mContext)) {
-                Intent intent = new Intent("com.cyanogenmod.action.UserChanged");
-                intent.setPackage("com.android.settings");
+                Intent intent = new Intent("android.intent.action.BOOT_COMPLETED");
+                intent.setPackage("org.cyanogenmod.cmparts");
                 mContext.sendBroadcastAsUser(intent, new UserHandle(UserHandle.USER_CURRENT));
             }
         }
